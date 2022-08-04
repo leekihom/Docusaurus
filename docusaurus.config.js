@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'leezihong',
   tagline: 'Dinosaurs are cool',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -23,8 +23,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -120,7 +120,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} leezihong, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
