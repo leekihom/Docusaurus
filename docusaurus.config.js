@@ -120,7 +120,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} leezihong, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} leezihong, Inc. Built with Docusaurus2.`,
       },
       prism: {
         theme: lightCodeTheme,
