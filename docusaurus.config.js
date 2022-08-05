@@ -109,7 +109,7 @@ const config = {
             items: [
               {
                 label: '关于我',
-                to: '/about',
+                to: '/',
               },
               {
                 label: 'Stack Overflow',
