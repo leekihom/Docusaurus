@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'leezihong',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  //tagline: 'Dinosaurs are cool',
+  url: 'https://doc.leezihong.cn',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
 
-  organizationName: 'facebook', 
+  organizationName: 'leekihom', 
   projectName: 'docusaurus', 
 
   
@@ -59,10 +59,14 @@ const config = {
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
+            position: 'right',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/blog', 
+            label: 'Blog', 
+            position: 'right',
+          },
           {
             href: 'https://github.com/leekihom/docusaurus',
             label: 'GitHub',
