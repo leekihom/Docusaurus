@@ -2,10 +2,11 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const name = '辰星';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'leezihong',
+  title: name,
   //tagline: 'Dinosaurs are cool',
   url: 'https://doc.leezihong.cn',
   baseUrl: '/',
@@ -17,7 +18,6 @@ const config = {
   organizationName: 'leekihom', 
   projectName: 'docusaurus', 
 
-  
 
   i18n: {
     defaultLocale: 'zh-Hans',
@@ -49,28 +49,46 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/logo.png',
+      announcementBar: {
+        id: "feature_release", // Any value that will identify this message.
+        content: `这是置顶的通知栏`,
+        backgroundColor: "#fafbfc", // Defaults to `#fff`.
+        textColor: "#091E42", // Defaults to `#000`.
+      },
+      docs: {
+        sidebar: {
+          hideable: false,
+          autoCollapseCategories: false,
+        },
+      },
       navbar: {
-        title: 'Echo',
+        title: name,
         logo: {
           alt: 'Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.webp',
+          srcDark: 'img/logo.webp',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            label: '归档',
             position: 'right',
-            label: 'Tutorial',
+            to: '/blog',
           },
           {
-            to: '/blog', 
+            label: '学习',
+            position: 'right',
+            to: '/blog',
+          },
+          {
             label: 'Blog', 
             position: 'right',
+            to: '/blog', 
           },
           {
-            href: 'https://github.com/leekihom/docusaurus',
             label: 'GitHub',
             position: 'right',
+            href: 'https://github.com/leekihom/docusaurus',
           },
         ],
       },
@@ -78,7 +96,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '学习',
             items: [
               {
                 label: 'Tutorial',
@@ -87,8 +105,12 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: '社交媒体',
             items: [
+              {
+                label: '关于我',
+                to: '/about',
+              },
               {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
@@ -104,7 +126,7 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: '更多',
             items: [
               {
                 label: 'Blog',
@@ -114,15 +136,25 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
               },
+              {
+                html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img style="height:50px;margin-top:0.5rem" src="/img/buildwith.png" /><a/>`
+              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://doc.leezihong.cn/">leezihong</a>, Inc. Built with Docusaurus2.`,
+        copyright: `<p><a href="http://beian.miit.gov.cn/" >渝ICP备2021011172号-1</a></p>Copyright © ${new Date().getFullYear()} <a href="https://doc.leezihong.cn/">${name}</a>, Inc. Built with Docusaurus2.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['java', 'sql'],
+        defaultLanguage: 'javascript',
       },
+      // algolia: {
+      //   appId: '',
+      //   apiKey: '',
+      //   indexName: '',
+      // },
     }),
 };
 

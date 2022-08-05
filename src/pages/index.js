@@ -30,7 +30,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`首页-Echo`}
+      title={`首页-辰星`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
